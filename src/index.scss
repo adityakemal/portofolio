@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Raleway:wght@200;400&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Raleway", sans-serif;
+  //   scroll-behavior: smooth !important;
+}
+
+.raleway {
+  font-family: "Raleway", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Anton", sans-serif;
+
+  letter-spacing: -0.1rem !important;
+  //   line-height: 7.5rem;
+}
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  //   left: 0;
+  //   right: 0;
+  height: 10px;
+  background: red;
+  //   transform-origin: 0%;s
+}
+
+body {
+  overflow-x: hidden;
+  //   overflow: hidden;
+}
+section {
+  height: 100vh;
+  width: 100%;
+  border-bottom: 1px solid #e3e3e3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// .panel {
+//   width: 100vw !important;
+//   height: 100vh !important;
+// }
+
+// body::-webkit-scrollbar {
+//   display: none;
+// }
+// *::-webkit-scrollbar-track {
+//   max-height: 0% !important;
+//   height: 0% !important;
+// }
+
+.loginpage {
+  position: relative;
+  inset: 0;
+  overflow: auto;
+  overflow-y: auto;
+  padding: 50px;
+  .loadingbox {
+    inset: 0;
+    position: fixed;
+    h1 {
+      //   background: linear-gradient(60deg, red, yellow, red, yellow, red);
+      z-index: 999;
+      background-color: white;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: rgba(255, 255, 255, 0.1);
+      //   color: transparent;
+      //   border: 1px solid red;
+      //   max-width: 385px;
+      //   max-width: 639.5px;
+    }
+  }
+}
+
+.about {
+  h1 {
+    line-height: 145px;
+  }
+  .country {
+    line-height: 70px;
+  }
+}
+
+// .float-middle {
+//   width: 200px;
+//   height: 200px;
+//   position: fixed;
+//   background-color: blue;
+//   top: 50%;
+//   left: 50%;
+//   margin-top: -100px;
+//   margin-left: -100px;
+// }
+
+.wrapmyjob {
+  .letter {
+    &:nth-child(odd) {
+      margin-top: -250px;
+    }
+    &:nth-child(even) {
+      margin-bottom: -250px;
+    }
+  }
+}
